@@ -9,6 +9,7 @@ Public GitHub Pages site for App Store and Play Store submissions.
 | Marketing | https://mrkrphl.github.io/sked-legal/ |
 | Privacy | https://mrkrphl.github.io/sked-legal/privacy.html |
 | Support | https://mrkrphl.github.io/sked-legal/support.html |
+| **Account deletion** | https://mrkrphl.github.io/sked-legal/delete-account.html |
 
 ## Store listing fields
 
@@ -17,6 +18,7 @@ Public GitHub Pages site for App Store and Play Store submissions.
 | Marketing / website | `https://mrkrphl.github.io/sked-legal/` |
 | Privacy policy | `https://mrkrphl.github.io/sked-legal/privacy.html` |
 | Support URL | `https://mrkrphl.github.io/sked-legal/support.html` |
+| Account deletion URL | `https://mrkrphl.github.io/sked-legal/delete-account.html` |
 
 Set in the sked app: `EXPO_PUBLIC_LEGAL_BASE_URL=https://mrkrphl.github.io/sked-legal`
 
