@@ -27,7 +27,7 @@
     <main>
       <article class="card prose">
         <h1 class="page-title">privacy policy</h1>
-        <p class="lead">Last updated: July 11, 2026</p>
+        <p class="lead">Last updated: October 11, 2026</p>
 
         <p>
           sked ("we", "our", or "the app") helps student groups share class schedules and see when
@@ -38,62 +38,110 @@
         <ul>
           <li>
             <strong>Account info</strong> — When you sign in with Google or Apple, we receive your
-            account identifier and email address from that provider.
+            email address and a user ID from that provider.
           </li>
           <li>
-            <strong>Profile info</strong> — Course, purpose (e.g. block section), and display name you
-            enter during onboarding.
+            <strong>Profile info</strong> — Your display name defaults to the part of your email
+            before the @ and you can edit it. Course (or what you do), purpose, and timezone are
+            optional. You can add a profile photo; if you do, you pick it with the system photo
+            picker and we store it in InstantDB storage.
           </li>
           <li>
-            <strong>Schedule data</strong> — Class blocks (subject, room, day, times) you add, and group
-            membership (groups you create or join).
+            <strong>Content you create</strong> — Class blocks (subject, room, day, times), groups
+            and memberships, group to-dos, group events (including notes), notes and note folders,
+            quiz rounds, and nudges.
           </li>
           <li>
-            <strong>Push token</strong> — If you allow notifications, we store an Expo push token on your
-            profile so we can send alerts later.
+            <strong>Last active time</strong> — Recorded automatically when you use the app.
           </li>
           <li>
-            <strong>Diagnostics (optional)</strong> — If enabled in a future release, crash reports
-            (Sentry) or product analytics (PostHog) may collect device and usage diagnostics. These are
-            not required to use the app today.
+            <strong>Push token</strong> — If you allow notifications, we store an Expo push token on
+            your profile so we can send them.
+          </li>
+          <li>
+            <strong>Analytics</strong> — PostHog records app opens, sign-up, onboarding complete, and
+            other core actions, using an anonymous ID. PostHog may also record your IP address and
+            approximate city.
+          </li>
+          <li>
+            <strong>Crash and performance</strong> — Sentry collects crash reports and performance
+            data so we can fix bugs and keep the app reliable.
           </li>
         </ul>
 
         <h2>How we use data</h2>
         <ul>
-          <li>Authenticate you and sync your schedule with your groups.</li>
-          <li>Show group members each other's schedules according to group visibility settings.</li>
-          <li>Improve reliability and fix bugs if diagnostic tools are enabled.</li>
+          <li>Authenticate you and sync your content across devices and groups.</li>
+          <li>Show group members content you share in those groups.</li>
+          <li>Understand usage, including from last active time.</li>
+          <li>
+            Send occasional emails if you've stopped using the app (re-engagement). You can ask us
+            to stop these emails.
+          </li>
+          <li>
+            Send push notifications you allow. Notification text can include to-do and event titles.
+          </li>
+          <li>Improve reliability and fix bugs with Sentry, and understand product usage with PostHog.</li>
         </ul>
 
         <h2>Who can see your data</h2>
         <ul>
           <li>
-            <strong>Group members</strong> — People in the same group can see your schedule. In
-            busy/free mode, they see availability slots only, not subject names or rooms.
+            <strong>Group members</strong> — People in the same group can see content shared in that
+            group.
           </li>
           <li>
-            <strong>Service providers</strong> — We use InstantDB for sync and storage, Google/Apple for
-            sign-in, and Expo for push delivery. Each processes data under their own policies.
+            <strong>Service providers</strong> — InstantDB (backend and storage), Expo (push),
+            PostHog (analytics), Sentry (crash and performance), Google and Apple (sign-in), and
+            Cloudflare (account deletion service). Each processes data under their own policies.
+          </li>
+          <li>
+            <strong>In-app purchases</strong> — Purchases on iOS go through Apple and RevenueCat.
           </li>
         </ul>
-        <p>We do not sell your personal information.</p>
+        <p>
+          We do not sell your personal information. We do not show ads, and we do not collect an
+          advertising ID.
+        </p>
+
+        <h2>Security</h2>
+        <p>All data is encrypted in transit (HTTPS).</p>
 
         <h2>Data retention &amp; deletion</h2>
         <p>
-          Data stays in your account while you use sked. You can delete individual class blocks or leave
-          groups in the app without deleting your account. See
+          Data stays in your account while you use sked. You can delete individual class blocks or
+          leave groups in the app without deleting your account. See
           <a href="support.html#delete-data">delete specific data</a>.
         </p>
+        <p>You can delete your entire account in two ways:</p>
+        <ul>
+          <li>
+            In the app under <strong>Account &gt; Delete account</strong> — this is immediate.
+          </li>
+          <li>
+            By email to
+            <a href="mailto:mrkrphl0705@gmail.com">mrkrphl0705@gmail.com</a> — handled within 30
+            days.
+          </li>
+        </ul>
         <p>
-          To delete your entire account and all associated data, use our
-          <a href="delete-account.html">account deletion page</a>.
+          Deleting removes your account and all data linked to you: profile, photo, class blocks,
+          notes and folders, quiz rounds, nudges, to-dos and events you created, group memberships,
+          push token, and groups left empty. Groups that still have other members remain, but your
+          content in them is removed.
+        </p>
+        <p>
+          Analytics and crash data held by PostHog and Sentry is anonymous and expires according to
+          their retention policies.
+        </p>
+        <p>
+          See the <a href="delete-account.html">account deletion page</a> for steps.
         </p>
 
         <h2>Children</h2>
         <p>
-          sked is intended for students (typically 13+). We do not knowingly collect data from children
-          under 13 without parental consent.
+          sked is intended for students (typically 13+). We do not knowingly collect data from
+          children under 13 without parental consent.
         </p>
 
         <h2>Changes</h2>
