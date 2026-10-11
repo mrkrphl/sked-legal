@@ -46,13 +46,20 @@
             optional.
           </li>
           <li>
-            <strong>Profile photo</strong> — Optional. If you add one, you pick it with the system
-            photo picker and we store it in InstantDB storage.
+            <strong>Profile photo and files</strong> — Optional. If you add a photo, you pick it
+            with the system photo picker. We store the photo and a cutout, plus any other files you
+            upload, in InstantDB storage.
           </li>
           <li>
-            <strong>Content you create</strong> — Class blocks (subject, room, day, times), groups
-            and memberships, group to-dos, group events with notes, notes and note folders, quiz
-            rounds, and nudges.
+            <strong>Pro</strong> — If you buy Pro on iOS, we store a Pro flag on your profile.
+            Purchases go through Apple and RevenueCat.
+          </li>
+          <li>
+            <strong>Content you create</strong> — Personal class blocks (subject, room, day, times)
+            and shared blocks in groups, groups and memberships, group to-dos (including
+            assignments and reminders), group events with notes, subject folders and notes (and
+            shares of them), group folders, quiz rounds, and nudges. Groups can have subject
+            colors.
           </li>
           <li>
             <strong>Last active time</strong> — Recorded automatically so we can understand usage
@@ -112,7 +119,7 @@
           photo, and other content in the app without deleting your account — or email us. See
           <a href="support.html#delete-data">delete specific data</a>.
         </p>
-        <p>There are two ways to delete your entire account and all data linked to you:</p>
+        <p>There are two ways to delete your account:</p>
         <ul>
           <li>
             <strong>In the app</strong> — Account → Delete account. This is immediate.
@@ -124,11 +131,48 @@
             <a href="delete-account.html">account deletion page</a>.
           </li>
         </ul>
+        <p>When you delete your account, this is what happens:</p>
+        <ul>
+          <li>
+            <strong>Sign-in account</strong> — Deleted last. Sign-in stops working.
+          </li>
+          <li>
+            <strong>Profile, push token, and Pro flag</strong> — Deleted.
+          </li>
+          <li>
+            <strong>Files under your account</strong> — Your profile photo and its cutout, and other
+            uploads, are deleted.
+          </li>
+          <li>
+            <strong>Personal class blocks</strong> — Deleted. Shared blocks stay with the group.
+          </li>
+          <li>
+            <strong>Group memberships and your to-do assignments</strong> — Deleted.
+          </li>
+          <li>
+            <strong>Group to-dos you wrote</strong> — Kept if others are still in the group (other
+            members' assignments and done marks stay on them). Your name is removed from them.
+          </li>
+          <li>
+            <strong>Reminders</strong> — Stay with their to-do. Deleted when that to-do is deleted,
+            or when its empty group is deleted.
+          </li>
+          <li>
+            <strong>Nudges you sent, group events you wrote, your subject folders and notes (and
+            shares of them), and quiz rounds you ran</strong> — Deleted.
+          </li>
+          <li>
+            <strong>Group folders you created</strong> — Handed to another member if the group
+            remains. Deleted with an empty group.
+          </li>
+          <li>
+            <strong>Groups</strong> — You are removed. A group is deleted only when no other member
+            remains. Subject colors stay with the group.
+          </li>
+        </ul>
         <p>
-          Deleting your account removes your profile, photo, class blocks, notes and folders, quiz
-          rounds, nudges, to-dos and events you created, group memberships, and push token. Groups
-          left with no other members are removed. Groups that still have other members remain, but
-          your content in them is removed.
+          Deleting your account does not cancel an Apple subscription. Cancel that in Apple
+          settings. Pro ends when your profile is deleted.
         </p>
         <p>
           Analytics and crash data held by PostHog and Sentry is not linked to your name or email
